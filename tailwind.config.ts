@@ -11,7 +11,13 @@ export default {
       colors: {
         background: "var(--background)",
         foreground: "var(--foreground)",
+        accent: "var(--accent-color)"
       },
+      fontFamily: {
+        dmsans: "DM Sans",
+        inter: "Inter",
+        jakarta: "Plus Jakarta Sans"
+      }
     },
   },
   plugins: [],

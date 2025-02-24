@@ -1,21 +1,41 @@
+@import url("https://fonts.googleapis.com/css2?family=DM+Sans:ital,opsz,wght@0,9..40,100..1000;1,9..40,100..1000&family=Inter:ital,opsz,wght@0,14..32,100..900;1,14..32,100..900&family=Jost:ital,wght@0,100..900;1,100..900&family=Plus+Jakarta+Sans:ital,wght@0,200..800;1,200..800&display=swap");
+
 @tailwind base;
 @tailwind components;
 @tailwind utilities;
 
 :root {
   --background: #ffffff;
-  --foreground: #171717;
-}
-
-@media (prefers-color-scheme: dark) {
-  :root {
-    --background: #0a0a0a;
-    --foreground: #ededed;
-  }
+  --background: #FCFCFD;
+  --accent-color: #F963AB;
 }
 
 body {
   color: var(--foreground);
   background: var(--background);
-  font-family: Arial, Helvetica, sans-serif;
+  font-family: "DM Sans", serif;
+}
+
+h1,
+h2,
+h3,
+h4,
+h5,
+h6 {
+  font-family: "Inter", serif;
+  font-family: "DM Sans", serif;
+}
+
+.ant-table-thead .ant-table-cell:first-child {
+  border-radius: 0px !important;
+}
+
+.ant-table-thead .ant-table-cell:last-child {
+  border-radius: 0px !important;
+}
+
+.ant-table-thead .ant-table-cell {
+  font-family: "DM Sans", serif !important;
+  font-weight: 500 !important;
+  color: #475467 !important;
 }
